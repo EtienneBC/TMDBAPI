@@ -1,0 +1,110 @@
+.SearchResult {
+    color: #A5BCDD;
+    height: auto;
+    z-index: 999;
+}
+
+.carouselContainer {
+    width: 80%;
+    height: 100%;
+    background-color: #051E3C;
+    color: #A5BCDD;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+.carousel {
+    margin: auto;
+}
+
+body a {
+    color: #A5BCDD;
+}
+
+.title {
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.oneLine {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#SearchHeader {
+    padding: 20px;
+    height: 515px;
+    background:
+        linear-gradient(90deg, rgba(5, 30, 60, 1) 0%, rgba(5, 30, 60, 1) 24%, rgba(255, 255, 255, 0) 100%),
+        url("./images/imgchess1.png");
+    background-size: cover;
+    color: #A5BCDD;
+}
+
+.linkStyle {
+    padding: 10px 10px;
+}
+
+.leftSearch {
+    width: 300px;
+    display: block;
+    float: left;
+}
+
+.viewMenu {
+    display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+    .leftSearch.active {
+        display: block;
+        /* Show when active */
+    }
+
+    .viewMenu {
+        display: block;
+    }
+
+    .title {
+        max-width: min-content;
+    }
+}
+.open {
+    display: block;
+    text-align: right;
+}
+.closed {
+    display: none;
+}
+.mobileBtn {
+    display: none;
+}
+@media only screen and (max-width: 1000px) {
+.linkStyle {
+    display: none;
+}
+.mobileBtn {
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+}
+}
+@media screen and (max-width: 600px) {
+    .carouselContainer {
+        width: 100%;
+    }
+}
