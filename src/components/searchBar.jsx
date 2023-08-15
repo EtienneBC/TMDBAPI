@@ -181,7 +181,7 @@ export default function SearchBar() {
                         </Collapse.Group>
                     </Grid>
                 </Col>
-                <Col fluid>
+                <Col >
                     <Text h3>Results</Text>
                     <Grid.Container gap={2} justify="center" width="fit-content">
                         {searchResults.map((item) => (
