@@ -5,6 +5,7 @@ import WatchlistButton from "./WatchlistButton.jsx";
 import { Grid, Image, Button, Container, Spacer, Modal, Row } from "@nextui-org/react"
 import Nav from "./Navbar.jsx";
 import VoteBar from "../hooks/VoteBar.jsx";
+import Footer from "./Footer.jsx";
 
 const SerieDetails = () => {
     const { seriesId } = useParams();
@@ -141,6 +142,7 @@ const SerieDetails = () => {
                 </Grid>
             </Grid.Container>
             <Spacer y={3} />
+            <Footer/>
         </>
     );
 };

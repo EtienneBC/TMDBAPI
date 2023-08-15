@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Image, Button, Text, Spacer, Card } from "@nextui-org/react"
 import Nav from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx';
 
 const Watchlist = () => {
   const [watchlistData, setWatchlistData] = useState([]);
@@ -115,6 +116,7 @@ const Watchlist = () => {
         Watchlist
       </Text>
       {renderWatchlist()}
+      <Footer />
     </div>
   );
 };

@@ -1,3 +1,7 @@
+body{
+    position: relative;
+    min-height: 100vh;
+}
 .SearchResult {
     color: #A5BCDD;
     height: auto;
@@ -15,7 +19,15 @@
     border-radius: 15px;
 
 }
-
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+}
+footer Container {
+    padding-bottom: 2.5rem; ;
+}
 .carousel {
     margin: auto;
 }

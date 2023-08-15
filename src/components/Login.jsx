@@ -72,9 +72,9 @@ function Login() {
                         <Text h3 id="modal-title">Connexion</Text>
                     </Modal.Header>
                     <Modal.Body className="form-group">
-                        <Text htmlFor="username">Nom d'utilisateur</Text>
+                        <Text htmlFor="username">Nom d'utilisateur (admin)</Text>
                         <Input type="text" id="username" value={username} onChange={handleUsernameChange} />
-                        <Text htmlFor="password">Mot de passe</Text>
+                        <Text htmlFor="password">Mot de passe (admin)</Text>
                         <Input type="password" id="password" value={password} onChange={handlePasswordChange} />
                     </Modal.Body>
                     <Modal.Footer>

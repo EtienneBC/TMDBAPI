@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Grid, Image, Button, Container, Spacer, Modal, Row } from "@nextui-org/react"
 import Nav from '../components/Navbar.jsx';
+import Footer from './Footer.jsx';
 
 
 
@@ -72,10 +73,9 @@ const ActorDetails = () => {
           <h3>Biography</h3>
           <p>{actor.biography}</p>
           <Spacer y={1} />
-          
-
         </Grid>
       </Grid.Container>
+      <Footer/>
     </>
   );
 

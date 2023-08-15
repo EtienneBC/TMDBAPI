@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { Text, Dropdown, Card, Grid } from "@nextui-org/react";
 import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
 export function MovieCategories() {
   const [categories, setCategories] = useState([]);
@@ -91,6 +92,7 @@ export function DisplayCategories() {
       <Navbar />
       <MovieCategories />
       <SeriesCategories />
+      <Footer />
     </div>
   );
 }

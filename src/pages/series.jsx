@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import WatchlistButton from '/src/components/WatchlistButton.jsx';
 import VoteBar from "../hooks/VoteBar.jsx";
 import Nav from "/src/components/Navbar.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function seriePage() {
   const [categories, setCategories] = useState([]);
@@ -238,6 +239,7 @@ export default function seriePage() {
           </Col>
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }

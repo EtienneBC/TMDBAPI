@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Nav from "/src/components/Navbar.jsx";
 import { Text, Container, Spacer } from "@nextui-org/react";
+import Footer from "../components/Footer.jsx";
 
 function About() {
     return (
@@ -25,6 +26,7 @@ function About() {
                 <Spacer y={1} />
                 <Link to="/">Return to the homepage</Link>
             </Container>
+            <Footer />
         </div>
     )
 }

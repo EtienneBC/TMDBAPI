@@ -5,6 +5,7 @@ import WatchlistButton from "./WatchlistButton.jsx";
 import { Grid, Image, Button, Container, Spacer, Modal, Row } from "@nextui-org/react"
 import Nav from "./Navbar.jsx";
 import VoteBar from "../hooks/VoteBar.jsx";
+import Footer from "./Footer.jsx";
 
 const ActorDetails = () => {
   const { movieId } = useParams();
@@ -158,7 +159,7 @@ const ActorDetails = () => {
         </Grid>
       </Grid.Container>
       <Spacer y={3} />
-
+      <Footer />
     </>
   );
 };

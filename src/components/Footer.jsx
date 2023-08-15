@@ -4,6 +4,8 @@ import { Text, Container, Row, Col, Image, Spacer } from '@nextui-org/react';
 
 export default function Footer () {
   return (
+    <div>
+    <Spacer y={3}/>
     <footer className="footer">
       <Container css={{backgroundColor:"#020202"}} fluid>
         <Row justify="center">
@@ -25,5 +27,6 @@ export default function Footer () {
         </Row>
       </Container>
     </footer>
+    </div>
   );
 }
