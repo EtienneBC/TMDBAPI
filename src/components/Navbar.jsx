@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link as NavLink } from 'react-router-dom';
 import Login from "./Login.jsx";
-import { Text, Container, Row, Col, Button } from '@nextui-org/react';
+import { Text, Container, Row, Col, Button, Image } from '@nextui-org/react';
 
 function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,9 @@ function Nav() {
         <Container fluid className={navStyle}>
             <Row>
                 <Row>
-                    <NavLink to="/" className="">Stargaze</NavLink>
+                    <NavLink to="/" className="">
+                        <Image src="../images/logoheader.png" height={"60px"} alt="logo" />
+                    </NavLink>
                     <NavLink to="/src/pages/movies" className="linkStyle">Movies</NavLink>
                     <NavLink to="/src/pages/series" className="linkStyle">TV Shows</NavLink>
                     <NavLink to="/src/pages/actors" className="linkStyle">Actors</NavLink>

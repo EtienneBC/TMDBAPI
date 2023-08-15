@@ -22,6 +22,7 @@ import Nav from "./components/Navbar.jsx";
 import Movie from "./pages/movies.jsx";
 import '../public/index.css';
 import theme from "./assets/theme.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 
@@ -33,6 +34,7 @@ const MovieList = () => {
       <TrendingCarousel />
       <PopularMovieCarousel />
       <PopularTVCarousel />
+<Footer></Footer>
     </div>
   );
 };
@@ -40,7 +42,6 @@ const MovieList = () => {
 function App() {
   return (
     <NextUIProvider theme={theme}>
-      
       <Router>
         <Routes>
           <Route path="/" element={<MovieList />} />

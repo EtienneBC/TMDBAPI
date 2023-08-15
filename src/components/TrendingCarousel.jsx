@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import WatchlistButton from '/src/components/WatchlistButton.jsx';
 import { Card, Text, Container } from '@nextui-org/react';
-
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 function TrendingCarousel() {
