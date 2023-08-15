@@ -121,3 +121,9 @@ body a {
         width: 100%;
     }
 }
+.form-group input {
+    border: 1px solid #A5BCDD;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
