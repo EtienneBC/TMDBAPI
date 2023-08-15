@@ -57,7 +57,7 @@ const TmdbSearch = () => {
                             <Card isPressable>
                                 {result.poster_path && (
                                     <Card.Image
-                                        src={`https://image.tmdb.org/t/p/w500${result.poster_path}`}
+                                        src={result.poster_path ? `https://image.tmdb.org/t/p/w500${result.poster_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
                                         objectFit="cover"
                                         width="100%"
                                         height={140}

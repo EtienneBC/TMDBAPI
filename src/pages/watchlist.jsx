@@ -79,7 +79,7 @@ const Watchlist = () => {
               <Grid.Container gap={2} css={{ background: "#0C1E3C" }}>
                 <Grid >
                   <Card css={{ border: "0" }}>
-                    <Image src={`https://image.tmdb.org/t/p/w200${item.posterPath}`} alt={item.title} />
+                    <Image src={item.posterPath ?`https://image.tmdb.org/t/p/w200${item.posterPath}`:'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'} alt={item.title} />
                   </Card>
                 </Grid>
                 <Grid xs={6} css={{ background: "#0C1E3C", display: "block!important" }}>

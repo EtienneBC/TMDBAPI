@@ -96,7 +96,7 @@ const ActorDetails = () => {
               css={{ objectPosition: "top" }}
               width={500}
               showSkeleton={true}
-              src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              src={movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
               alt={movie.title}
             />
           </Grid>

@@ -10,8 +10,8 @@ export default function Footer () {
       <Container css={{backgroundColor:"#020202"}} fluid>
         <Row justify="center">
           <Col align="center">
-            <Image
-              src="/images/logofooter.png"
+            <img
+              src="https://site1.etiennecouture.ca/wp-content/uploads/2023/08/logofooter.png"
               width={100}
               height={100}
               className="logo"

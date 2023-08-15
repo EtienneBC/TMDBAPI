@@ -34,7 +34,7 @@ function ActorList() {
                                 <Image
                                     height={300}
                                     width={200}
-                                    src={`https://image.tmdb.org/t/p/w200${data.profile_path}`}
+                                    src={data.profile_path ? `https://image.tmdb.org/t/p/w200${data.profile_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
                                     alt={data.name} />
                                 <Spacer y={0.5} />
                                 <Text

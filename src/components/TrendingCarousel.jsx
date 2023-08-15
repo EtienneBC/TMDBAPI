@@ -44,7 +44,7 @@ function TrendingCarousel() {
           <SplideSlide key={item.id}>
             <Card isHoverable css={{ w: "80%", border:"0" }}>
               <Card.Body css={{ p: 0 }} >
-                <Card.Image width="100%" height="100%" objectFit="cover" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title || item.name} />
+                <Card.Image width="100%" height="100%" objectFit="cover" src={item.poster_path ?`https://image.tmdb.org/t/p/w500${item.poster_path}`: 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'} alt={item.title || item.name} />
               </Card.Body>
             </Card>
             <div>

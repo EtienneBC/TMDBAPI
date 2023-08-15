@@ -191,10 +191,10 @@ export default function SearchBar() {
                                         showSkeleton={true}
                                         width={200}
                                         height={300}
-                                        src={`https://image.tmdb.org/t/p/w200${item.poster_path}`}
+                                        src={item.poster_path ? `https://image.tmdb.org/t/p/w200${item.poster_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
                                         alt="Movie poster"
                                         css={{ borderRadius: "15px" }}
-                                        maxDelay={100000}
+                                        maxDelay={1000}
                                     />
                                 </Link>
                                 <Container css={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>

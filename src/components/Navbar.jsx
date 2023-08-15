@@ -15,7 +15,7 @@ function Nav() {
             <Row>
                 <Row>
                     <NavLink to="/" className="">
-                        <Image src="../images/logoheader.png" height={"60px"} alt="logo" />
+                        <Image src="https://site1.etiennecouture.ca/wp-content/uploads/2023/08/logoheader.png" height={"60px"} alt="logo" />
                     </NavLink>
                     <NavLink to="/src/pages/movies" className="linkStyle">Movies</NavLink>
                     <NavLink to="/src/pages/series" className="linkStyle">TV Shows</NavLink>

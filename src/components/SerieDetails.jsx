@@ -78,7 +78,7 @@ const SerieDetails = () => {
                         <Image
                             width={500}
                             showSkeleton={true}
-                            src={`https://image.tmdb.org/t/p/w500${serie.poster_path}`}
+                            src={serie.poster_path ? `https://image.tmdb.org/t/p/w500${serie.poster_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
                             alt={serie.name}
                         />
                     </Grid>
@@ -136,7 +136,7 @@ const SerieDetails = () => {
                         }}
                         width={500}
                         showSkeleton={true}
-                        src={`https://image.tmdb.org/t/p/w500${serie.backdrop_path}`}
+                        src={serie.backdrop_path ? `https://image.tmdb.org/t/p/w500${serie.backdrop_path}` : 'https://site1.etiennecouture.ca/wp-content/uploads/2023/08/placeholder.png'}
                     >
                     </Image>
                 </Grid>
